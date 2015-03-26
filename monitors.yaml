@@ -1,0 +1,1998 @@
+#############################################################################
+## The official (definitive) information about monitors.
+##
+## $Id: monitors.yaml,v 1.305 2014/03/07 01:44:58 youngh Exp $
+#############################################################################
+
+---
+.defaults: monitor
+ssh_user: ark
+ssh_port: 22
+#sudo_su_command: sudo -i -u %%USER%%
+scamper_arguments: -P 8743 -p 100 -M %%MONITOR%% -c "trace -P icmp-paris -q 3 -L 1"
+scamper_executable: scamper-20070523m
+enabled: true
+
+---
+.monitor: san-us
+#ip_address: 192.172.226.5
+#ip6_address: 2001:48d0:101:501::5
+ip_address: 192.172.226.247
+ip6_address: 2001:48d0:101:501:ba27:ebff:fe3a:ab77
+os_version: linux-raspbian
+node_id: 3
+team: 1
+activity_topo_v6: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: San Diego, CA, US
+geographic_longitude: -117.1572551
+geographic_latitude: 32.7153292
+organization_name: CAIDA
+organization_url: http://www.caida.org/
+organization_classification: research
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: Sysadmins <trouble@caida.org>
+contact_admin: Sysadmins <trouble@caida.org>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 256MB Model B Revision 0003
+xively_url: https://xively.com/feeds/923326612
+activation_time: 1191365506
+
+# 2014-01-16: laf-us decommissioned; 128.210.141.198; fbsd7.3, node 4, team 1
+
+---
+.monitor: amw-us
+ip_address: 129.186.1.240
+os_version: freebsd9.1
+node_id: 5
+team: 1
+feature_radclock: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Ames, IA, US
+geographic_longitude: -93.625622
+geographic_latitude: 42.02335
+organization_name: Iowa State University
+organization_url: http://www.iastate.edu/
+organization_classification: university
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: Paul Lustgraaf <grpjl@iastate.edu>, Andy Weisskopf <amw@iastate.edu>
+contact_admin: Paul Lustgraaf <grpjl@iastate.edu>, Andy Weisskopf <amw@iastate.edu>
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/2035072475
+activation_time: 1179504000
+
+---
+.monitor: nrt-jp
+ip_address: 203.181.248.51
+os_version: freebsd7.3
+node_id: 6
+team: 1
+feature_radclock: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Tokyo, JP
+geographic_longitude: 139.6917064
+geographic_latitude: 35.6894875
+organization_name: APAN
+organization_url: http://www.apan.net/
+organization_classification: research network
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: KITAMURA Yasuichi <kita@jp.apan.net>, ops@jp.apan.net
+contact_admin: Kazunori Konishi <konishi@jp.apan.net>
+xively_url: https://xively.com/feeds/1857141313
+activation_time: 1183134053
+
+---
+.monitor: hel-fi
+ip_address: 195.148.124.66
+ip6_address: 2001:708:40:2001:21c:c0ff:fea2:4c5c
+os_version: freebsd7.3
+node_id: 8
+team: 1
+feature_radclock: true
+activity_topo_v6: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Espoo, FI
+geographic_longitude: 24.6540814
+geographic_latitude: 60.2052352
+organization_name: TKK
+organization_url: http://www.tkk.fi/
+organization_classification: university
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: Markus Peuhkuri <markus.peuhkuri@aalto.fi>
+contact_admin: Markus Peuhkuri <markus.peuhkuri@aalto.fi>
+xively_url: https://xively.com/feeds/1019134005
+activation_time: 1183130915
+
+---
+.monitor: dub-ie
+ip_address: 193.1.193.136
+ip6_address: 2001:770:18:7:225:90ff:fe0c:acb4
+os_version: freebsd7.3
+node_id: 9
+team: 1
+#scamper_arguments: -D 8743 -p 100 -M %%MONITOR%% -c "trace -P icmp-paris -q 3 -L 1"
+feature_radclock: true
+activity_topo_v6: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Dublin, IE
+geographic_longitude: -6.257347
+geographic_latitude: 53.34156
+organization_name: HEANet
+organization_url: http://www.heanet.ie/
+organization_classification: research network
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: Brian Nisbet <brian.nisbet@heanet.ie>
+contact_admin: Brian Nisbet <brian.nisbet@heanet.ie>
+xively_url: https://xively.com/feeds/1183633491
+activation_time: 1183134339
+
+---
+.monitor: mnl-ph
+ip_address: 202.90.158.5
+ip6_address: 2001:d18:1:1:ba27:ebff:fe7a:353
+os_version: linux-raspbian
+node_id: 10
+team: 1
+activity_topo_v6: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Quezon City, PH
+geographic_longitude: 121.0437003
+geographic_latitude: 14.6760413
+organization_name: ASTI
+organization_url: http://www.asti.dost.gov.ph/
+organization_classification: research
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: Denis F. Villorente <denis@asti.dost.gov.ph>
+contact_admin: Denis F. Villorente <denis@asti.dost.gov.ph>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000f
+xively_url: https://xively.com/feeds/1431140397
+activation_time: 1183128616
+
+---
+.monitor: cjj-kr
+ip_address: 150.183.95.135
+os_version: freebsd7.3
+ssh_port: 8035
+node_id: 11
+team: 1
+feature_radclock: true
+geographic_location: Daejeon, KR
+geographic_longitude: 127.3845475
+geographic_latitude: 36.3504119
+organization_name: KREONet2
+organization_url: http://www.kreonet.net/
+organization_classification: research network
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: Won-Hyuk Lee <livezone@kisti.re.kr>
+contact_admin: Won-Hyuk Lee <livezone@kisti.re.kr>
+xively_url: https://xively.com/feeds/282519543
+activation_time: 1183132906
+
+---
+.monitor: syd-au
+ip_address: 202.158.196.137
+ip6_address: 2001:388:1:5001:21c:c0ff:fea2:4a3a
+os_version: freebsd7.3
+node_id: 12
+team: 1
+feature_radclock: true
+activity_topo_v6: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Sydney, AU
+geographic_longitude: 151.2068896
+geographic_latitude: -33.873651
+organization_name: AARNet
+organization_url: http://www.aarnet.edu.au/
+organization_classification: research network
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: Bruce Morgan <Bruce.Morgan@aarnet.edu.au>, noc@aarnet.edu.au
+contact_admin: Bruce Morgan <Bruce.Morgan@aarnet.edu.au>
+xively_url: https://xively.com/feeds/1318440665
+activation_time: 1183133612
+
+# (2013-10-31) Box configured to use DHCP with a static assignment.
+# They'll change the DHCP address once the new DMZ is in place.
+---
+.monitor: hlz-nz
+ip_address: 130.217.77.6
+os_version: freebsd7.3
+node_id: 13
+team: 1
+feature_radclock: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Hamilton, NZ
+geographic_longitude: 175.279253
+geographic_latitude: -37.7870012
+organization_name: University of Waikato
+organization_url: http://www.cs.waikato.ac.nz/
+organization_classification: university
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: Tony McGregor <tonym@cs.waikato.ac.nz>
+contact_admin: Tony McGregor <tonym@cs.waikato.ac.nz>
+xively_url: https://xively.com/feeds/1634464279
+activation_time: 1195086644
+
+---
+.monitor: lej-de
+ip_address: 139.18.1.244
+os_version: freebsd7.3
+node_id: 14
+team: 1
+feature_radclock: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Leipzig, DE
+geographic_longitude: 12.3713639
+geographic_latitude: 51.3396731
+organization_name: Universitat Leipzig
+organization_url: http://www.uni-leipzig.de/
+organization_classification: university
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: Eicke Friedrich <eicke@rz.uni-leipzig.de>
+contact_admin: Eicke Friedrich <eicke@rz.uni-leipzig.de>
+xively_url: https://xively.com/feeds/97813964
+activation_time: 1195086950
+
+---
+.monitor: bcn-es
+ip_address: 84.88.81.122
+ip6_address: 2001:40b0:7500:14::5458:517a
+os_version: freebsd7.3
+node_id: 15
+team: 1
+feature_radclock: true
+activity_topo_v6: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Barcelona, ES
+geographic_longitude: 2.1699187
+geographic_latitude: 41.387917
+organization_name: Universitat Politecnica de Catalunya
+organization_url: http://upc.edu/
+organization_classification: university
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: Pere Barlet-Ros <pbarlet@ac.upc.edu>, Alberto Lopez <alopez@ac.upc.edu>
+contact_admin: Jordi Domingo-Pascual <jordi.domingo@ac.upc.edu>
+xively_url: https://xively.com/feeds/2069381418
+activation_time: 1197919626
+
+---
+.monitor: yto-ca
+ip_address: 205.189.33.78
+os_version: linux-raspbian
+node_id: 16
+team: 1
+activity_spoofer: true
+activity_iffinder: true
+geographic_location: Ottawa, CA
+geographic_longitude: -75.6971931
+geographic_latitude: 45.4215296
+organization_name: Canarie
+organization_url: http://www.canarie.ca/canet4/
+organization_classification: research network
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: Jun Jian <jun.jian@canarie.ca>
+contact_admin: Jun Jian <jun.jian@canarie.ca>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+xively_url: https://xively.com/feeds/219779610
+activation_time: 1200341176
+
+---
+.monitor: iad-us
+ip_address: 192.149.252.140
+ip6_address: 2001:500:4:12::140
+os_version: freebsd7.3
+ssh_port: 1022
+node_id: 17
+team: 2
+feature_radclock: true
+activity_topo_v6: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Chantilly, VA, US
+geographic_longitude: -77.4310992
+geographic_latitude: 38.8942786
+organization_name: ARIN
+organization_url: http://www.arin.net/
+organization_classification: network infrastructure
+organization_aup: http://www.caida.org/projects/ark/aup/aup_no3rdparty_use.xml
+contact_tech: Pete Toscano <pete@arin.net>
+contact_admin: Mark Kosters <markk@arin.net>
+xively_url: https://xively.com/feeds/58933212
+activation_time: 1202253273
+
+---
+.monitor: vie-at
+ip_address: 78.41.116.2
+ip6_address: 2a02:60:1:1::49
+os_version: linux-raspbian
+node_id: 18
+team: 2
+activity_topo_v6: true
+activity_spoofer: true
+activity_iffinder: true
+geographic_location: Vienna, AT
+geographic_longitude: 16.3738189
+geographic_latitude: 48.2081743
+organization_name: FunkFeuer
+organization_url: http://www.funkfeuer.at/
+organization_classification: community network
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: \"L. Aaron Kaplan\" <aaron@lo-res.org>
+contact_admin: \"L. Aaron Kaplan\" <aaron@lo-res.org>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+xively_url: https://xively.com/feeds/470727409
+activation_time: 1203454489
+
+---
+.monitor: cbg-uk
+ip_address: 128.232.97.9
+ip6_address: 2001:630:212:225:225:90ff:fe0c:45a6
+os_version: freebsd7.3
+node_id: 19
+team: 2
+feature_radclock: true
+activity_topo_v6: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Cambridge, UK
+geographic_longitude: 0.1312368
+geographic_latitude: 52.2025441
+organization_name: University of Cambridge
+organization_url: http://www.cam.ac.uk/
+organization_classification: university
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: Andrew Moore <andrew.moore@cl.cam.ac.uk>
+contact_admin: Andrew Moore <andrew.moore@cl.cam.ac.uk>
+xively_url: https://xively.com/feeds/1756749111
+activation_time: 1204161985
+
+---
+.monitor: gig-br
+ip_address: 200.159.255.29
+os_version: linux-raspbian
+node_id: 21
+team: 2
+geographic_location: Rio de Janeiro, BR
+geographic_longitude: -43.2095869
+geographic_latitude: -22.9035393
+organization_name: RNP
+organization_url: http://www.rnp.br/
+organization_classification: research network
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: <noc@rnp.br>
+contact_admin: Sidney Lucena <sidney@rnp.br>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+xively_url: https://xively.com/feeds/1391113683
+activation_time: 1204660556
+
+---
+.monitor: hnl-us
+ip_address: 205.166.205.222
+os_version: linux-raspbian
+node_id: 22
+team: 2
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Honolulu, HI, US
+geographic_longitude: -157.8583333
+geographic_latitude: 21.3069444
+organization_name: University of Hawaii
+organization_url: http://www.hawaii.edu/
+organization_classification: university
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: Steven A. Ledward <ledward@hawaii.edu>, Alan Whinery <whinery@hawaii.edu>
+contact_admin: Steven A. Ledward <ledward@hawaii.edu>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000f
+xively_url: https://xively.com/feeds/1268930355
+activation_time: 1204659645
+
+---
+.monitor: lax-us
+ip_address: 137.164.84.50
+ip6_address: 2607:F380:A44:4::4
+os_version: linux-raspbian
+node_id: 23
+team: 2
+activity_topo_v6: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Los Angeles, CA, US
+geographic_longitude: -118.2436849
+geographic_latitude: 34.0522342
+organization_name: CENIC
+organization_url: http://www.cenic.org/
+organization_classification: research network
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: Will Black <wblack@cenic.org>, Darrell Newcomb <darrell@cenic.org>
+contact_admin: Darrell Newcomb <darrell@cenic.org>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000f
+xively_url: https://xively.com/feeds/332568105
+activation_time: 1204572796
+
+---
+.monitor: cmn-ma
+ip_address: 196.200.131.131
+os_version: freebsd7.3
+node_id: 24
+team: 2
+feature_radclock: true
+activity_spoofer: true
+geographic_location: Casablanca, MA
+geographic_longitude: -7.631949
+geographic_latitude: 33.605381
+organization_name: CNRST
+organization_url: http://www.cnr.ac.ma/
+organization_classification: research
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: Noc Marwan <noc@marwan.ma>
+contact_admin: Youness Hamidi <youness@cnrst.ma>, Redouane Merrouch <merrouch@cnrst.ma>
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/645461780
+activation_time: 1204651848
+
+---
+.monitor: zrh-ch
+ip_address: 130.60.40.26
+os_version: freebsd7.3
+node_id: 25
+team: 2
+feature_radclock: true
+activity_iffinder: true
+geographic_location: Zurich, CH
+geographic_longitude: 8.5500025
+geographic_latitude: 47.367347
+organization_name: University of Zurich
+organization_url: http://www.uzh.ch/
+organization_classification: university
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: kbadmin@oci.uzh.ch
+contact_admin: kbadmin@oci.uzh.ch
+xively_url: https://xively.com/feeds/417980694
+activation_time: 1210878674
+
+---
+.monitor: bwi-us
+ip_address: 204.235.64.14
+ip6_address: 2001:500:1:100::130
+os_version: freebsd7.4
+node_id: 26
+team: 2
+ntp_server: 192.33.13.14
+#also ntp_server: 128.63.16.162
+activity_topo_v6: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Aberdeen, MD, US
+geographic_longitude: -76.1641197
+geographic_latitude: 39.5095556
+organization_name: US Army Research Lab
+organization_url: http://www.arl.army.mil/
+organization_classification: military research
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: Howard M. Kash III <hmkash@arl.army.mil>
+contact_admin: Howard M. Kash III <hmkash@arl.army.mil>
+xively_url: https://xively.com/feeds/1731092968
+activation_time: 1212507739
+
+# 2014-01-22: rek-is decommissioned; 217.151.171.15; fbsd71, node 46, team 3
+
+---
+.monitor: ams-nl
+ip_address: 192.87.102.98
+ip6_address: 2001:610:1:80bb:202:a5ff:fee7:227a
+os_version: freebsd4.6
+node_id: 27
+team: 2
+activity_topo_v6: true
+activity_spoofer: true
+# 2013-07-23: decided to disable midar; time sync is often off by a lot
+activity_midar: false
+activity_iffinder: true
+geographic_location: Amsterdam, NL
+geographic_longitude: 4.8951679
+geographic_latitude: 52.3702157
+organization_name: SURFnet
+organization_url: http://www.surfnet.nl/
+organization_classification: research network
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: Luuk Oostenbrink <luuk.oostenbrink@surfnet.nl>
+contact_admin: Luuk Oostenbrink <luuk.oostenbrink@surfnet.nl>
+xively_url: https://xively.com/feeds/1106000735
+activation_time: 1213149112
+
+---
+.monitor: tpe-tw
+ip_address: 211.79.61.157
+ip6_address: 2001:e10:3c00:2:21c:c0ff:fe91:142f
+os_version: freebsd9.1
+node_id: 28
+team: 2
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Hsinchu, TW
+geographic_longitude: 120.9646866
+geographic_latitude: 24.8039455
+organization_name: TWAREN
+organization_url: http://www.twaren.net
+organization_classification: research network
+organization_aup: http://www.caida.org/projects/nlanr/transition/archipelago_amp_node_usage.xml
+contact_tech: Li-Chi Ku <lku@nchc.org.tw>
+contact_admin: Te-Lung Liu <tlliu@nchc.gov.tw>
+xively_url: https://xively.com/feeds/1100857229
+activation_time: 1216425936
+
+---
+.monitor: yow-ca
+ip_address: 192.231.228.5
+ip6_address: 2001:410:90ff::5
+os_version: freebsd7.3
+node_id: 29
+team: 2
+feature_radclock: true
+activity_topo_v6: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Ottawa, ON, CA
+geographic_longitude: -75.6971931
+geographic_latitude: 45.4215296
+organization_name: Ottawa Internet Exchange
+organization_url: http://www.ottix.net/
+organization_classification: network infrastructure
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: peering@ottix.net
+contact_admin: William F. Maton <wmaton@ottix.net>
+xively_url: https://xively.com/feeds/555291829
+activation_time: 1219168376
+
+---
+.monitor: she-cn
+ip_address: 202.118.7.140
+os_version: freebsd7.3
+node_id: 30
+team: 3
+ssh_port: 8035
+feature_radclock: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Shenyang, CN
+geographic_longitude: 123.43147
+geographic_latitude: 41.80572
+organization_name: Northeastern University
+organization_url: http://www.neu.edu.cn/
+organization_classification: university
+contact_tech: aijun@live.com
+contact_admin: zhaoh@mail.neu.edu.cn
+hardware_origin: Skitter
+xively_url: https://xively.com/feeds/248027100
+activation_time: 1220997771
+
+---
+.monitor: her-gr
+ip_address: 139.91.90.6
+ip6_address: 2001:648:2c30:8000::fff1
+os_version: freebsd7.3
+node_id: 32
+team: 3
+ntp_server: timehost.ics.forth.gr
+feature_radclock: true
+activity_topo_v6: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Heraklion, Crete, GR
+geographic_longitude: 25.138526
+geographic_latitude: 35.329162
+organization_name: Foundation for Research and Technology - Hellas (FORTH)
+organization_url: http://www.ics.forth.gr
+organization_classification: research
+contact_tech: Demetres Antoniades <danton@ics.forth.gr>
+contact_admin: Michalis Polychronakis <mikepo@ics.forth.gr>
+xively_url: https://xively.com/feeds/499751121
+activation_time: 1225836677
+
+---
+.monitor: scl-cl
+ip_address: 200.27.115.62
+ip6_address: 2001:1398:4::62
+os_version: freebsd7.3
+node_id: 33
+team: 3
+feature_radclock: true
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Santiago, CL
+geographic_longitude: -70.55
+geographic_latitude: -33.4166667
+organization_name: NIC Chile
+organization_url: http://www.nic.cl
+organization_classification: network infrastructure
+contact_tech: Eduardo Mercader Orta <emercade@nic.cl>
+contact_admin: Eduardo Mercader Orta <emercade@nic.cl>
+xively_url: https://xively.com/feeds/578042435
+activation_time: 1225492067
+
+---
+.monitor: dfw-us
+ip_address: 129.119.99.169
+os_version: freebsd9.1
+node_id: 34
+team: 3
+activity_spoofer: true
+# 2013-07-23 outgoing TCP RST blocked
+activity_midar: false
+activity_iffinder: true
+geographic_location: Dallas, TX, US
+geographic_longitude: -96.769923
+geographic_latitude: 32.802955
+organization_name: Southern Methodist University
+organization_url: http://www.smu.edu
+organization_classification: university
+contact_tech: Bruce Meikle <rbm@smu.edu>
+contact_admin: Bruce Meikle <rbm@smu.edu>
+# (2014-01-17) was "hardware_origin: AMP", which doesn't seem correct
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/2058448776
+activation_time: 1229027132
+
+---
+.monitor: pna-es
+ip_address: 130.206.158.142
+os_version: freebsd7.4
+node_id: 35
+team: 3
+feature_radclock: true
+activity_spoofer: true
+activity_iffinder: true
+geographic_location: Pamplona, Navarra, ES
+geographic_longitude: -1.6441835
+geographic_latitude: 42.8179879
+organization_name: Public University of Navarra
+organization_url: http://www.unavarra.es
+organization_classification: university
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: Daniel Morato Oses <daniel.morato@unavarra.es>
+contact_admin: Daniel Morato Oses <daniel.morato@unavarra.es>
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/551608610
+activation_time: 1227210252
+
+---
+.monitor: eug-us
+ip_address: 128.223.157.8
+ip6_address: 2001:468:d01:103::80df:9d08
+os_version: freebsd7.3
+node_id: 36
+team: 3
+feature_radclock: true
+activity_topo_v6: true
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Eugene, OR, US
+geographic_longitude: -123.0867536
+geographic_latitude: 44.0520691
+organization_name: University of Oregon
+organization_url: http://www.uoregon.edu/
+organization_classification: university
+contact_tech: <jad@network-services.uoregon.edu>
+contact_admin: <jad@network-services.uoregon.edu>
+xively_url: https://xively.com/feeds/801238367
+activation_time: 1229026782
+
+---
+.monitor: nap-it
+ip_address: 143.225.229.226
+os_version: linux-raspbian
+node_id: 37
+team: 3
+ntp_server: 143.225.190.107
+activity_spoofer: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Napoli, IT
+geographic_longitude: 14.2516357
+geographic_latitude: 40.8400969
+organization_name: University of Napoli
+organization_url: http://www.unina.it
+organization_classification: university
+contact_tech: Alberto Dainotti <alberto@unina.it>
+contact_admin: Antonio Pescape <pescape@unina.it>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+xively_url: https://xively.com/feeds/163172132
+activation_time: 1233083960
+
+# Note: Node 38 is brak.caida.org.
+activity_iffinder: true
+
+---
+.monitor: wbu-us
+ip_address: 192.43.244.202
+os_version: freebsd7.3
+node_id: 39
+team: 3
+feature_radclock: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Boulder, CO, US
+geographic_longitude: -105.2705456
+geographic_latitude: 40.0149856
+organization_name: NCAR
+organization_url: http://www.ucar.edu
+organization_classification: research
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_admin: Jeff Custard <jcustard@ucar.edu>
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/354740340
+activation_time: 1244505622
+
+---
+.monitor: bjc-us
+ip_address: 209.245.28.50
+os_version: freebsd7.1
+node_id: 40
+team: 3
+activity_iffinder: true
+geographic_location: Broomfield, CO, US
+geographic_longitude: -105.0866504
+geographic_latitude: 39.9205411
+organization_name: Level 3 Communications
+organization_url: http://www.level3.com
+organization_classification: commercial network
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: \"Siegel, David\" <David.Siegel@Level3.com>
+contact_admin: \"Siegel, David\" <David.Siegel@Level3.com>
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/638088513
+activation_time: 1245024000
+
+---
+.monitor: sql-us
+ip_address: 149.20.54.219
+ip6_address: 2001:4f8:3:36::219
+os_version: freebsd7.1
+node_id: 41
+team: 3
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Redwood City, CA, US
+geographic_longitude: -122.2363548
+geographic_latitude: 37.4852152
+organization_name: Internet Systems Consortium
+organization_url: http://www.isc.org
+organization_classification: business
+contact_tech: Peter Losher <plosher@isc.org>
+contact_admin: Peter Losher <plosher@isc.org>
+xively_url: https://xively.com/feeds/1444817407
+activation_time: 1245369600
+
+---
+.monitor: sea-us
+ip_address: 128.208.4.133
+os_version: freebsd7.1
+node_id: 43
+team: 1
+activity_midar: true
+activity_iffinder: true
+geographic_location: Seattle, WA, US
+geographic_longitude: -122.3320708
+geographic_latitude: 47.6062095
+organization_name: University of Washington
+organization_url: http://www.washington.edu
+organization_classification: university
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: Tom Anderson <tom@cs.washington.edu>
+contact_admin: Tom Anderson <tom@cs.washington.edu>
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/1637276884
+activation_time: 1252605400
+
+---
+.monitor: mty-mx
+ip_address: 200.94.183.154
+os_version: freebsd7.3
+node_id: 44
+team: 3
+feature_radclock: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Monterrey, MX
+geographic_longitude: -100.309201
+geographic_latitude: 25.673211
+organization_name: NIC Mexico
+organization_url: http://www.nic.mx
+organization_classification: network infrastructure
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: Gustavo Lozano Ibarra <glozano@nic.mx>
+contact_admin: Oscar A. Robles-Garay <orobles@nic.mx>
+hardware_origin: Contributed
+xively_url: https://xively.com/feeds/976909945
+activation_time: 1257798444
+
+---
+.monitor: arn-se
+ip_address: 194.68.13.6
+os_version: freebsd7.3
+node_id: 45
+team: 2
+feature_radclock: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Stockholm, SE
+geographic_longitude: 18.0644881
+geographic_latitude: 59.3327881
+organization_name: NORDUnet
+organization_url: http://www.nordu.net/
+organization_classification: research network
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: Leif Johansson <leifj@it.su.se>
+contact_admin: Leif Johansson <leifj@it.su.se>
+xively_url: https://xively.com/feeds/1627347528
+activation_time: 1292452697
+
+---
+.monitor: ams2-nl
+ip_address: 91.200.16.102
+ip6_address: 2001:67c:1a8:200::102
+os_version: freebsd7.1
+node_id: 47
+team: 3
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Amsterdam, NL
+geographic_longitude: 4.8951679
+geographic_latitude: 52.3702157
+organization_name: AMS-IX
+organization_url: http://www.ams-ix.net/
+organization_classification: network infrastructure
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: noc@ams-ix.net
+contact_admin: Elisa Jasinska <elisa.jasinska@ams-ix.net>
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/1261656861
+activation_time: 1264020174
+
+---
+.monitor: sjc2-us
+ip_address: 64.71.191.54
+ip6_address: 2001:470:0:12c::2
+os_version: freebsd9.1
+node_id: 48
+team: 2
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: San Jose, CA, US
+geographic_longitude: -121.8949555
+geographic_latitude: 37.3393857
+organization_name: Hurricane Electric
+organization_url: http://www.he.net/
+organization_classification: commercial network
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: Alex Broque <broquea@he.net>, noc@he.net
+contact_admin: Alex Broque <broquea@he.net>
+hardware_origin: Contributed
+xively_url: https://xively.com/feeds/136723518
+activation_time: 1264636800
+
+---
+.monitor: ord-us
+ip_address: 140.192.218.138
+os_version: freebsd7.1
+node_id: 49
+team: 3
+activity_midar: true
+activity_iffinder: true
+geographic_location: Chicago, IL, US
+geographic_longitude: -87.6297982
+geographic_latitude: 41.8781136
+organization_name: DePaul University
+organization_url: http://www.depaul.edu
+organization_classification: university
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: John Kristoff <jtk@depaul.edu>
+contact_admin: John Kristoff <jtk@depaul.edu>
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/2033632401
+activation_time: 1266278400
+
+---
+.monitor: dkr-sn
+ip_address: 196.1.95.8
+#ip6_address: 2001:4278:1000:1::8
+os_version: linux-raspbian
+node_id: 50
+team: 1
+# disabled v6 2014-01-15
+#activity_topo_v6: true
+geographic_location: Dakar, SN
+geographic_longitude: -17.3333333
+geographic_latitude: 14.75
+organization_name: UCAD
+organization_url: http://www.ucad.sn/
+organization_classification: university
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: Khoudia Gueye SY <khoudiasy@ucad.edu.sn>
+contact_admin: Khoudia Gueye SY <khoudiasy@ucad.edu.sn>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+xively_url: https://xively.com/feeds/177287170
+activation_time: 1266438329
+
+---
+.monitor: jfk-us
+ip_address: 216.66.30.102
+ip6_address: 2001:470:0:12d::2
+os_version: freebsd7.2
+node_id: 51
+team: 3
+#ntp_server: clock.he.net
+ntp_server: 216.218.192.202
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: New York, NY, US
+geographic_longitude: -74.0059731
+geographic_latitude: 40.7143528
+organization_name: Hurricane Electric
+organization_url: http://www.he.net/
+organization_classification: commercial network
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: Alex Broque <broquea@he.net>
+contact_admin: Alex Broque <broquea@he.net>
+hardware_origin: Contributed
+xively_url: https://xively.com/feeds/164161898
+activation_time: 1270080085
+
+---
+.monitor: bma-se
+ip_address: 195.206.248.254
+ip6_address: 2001:16d8:ff86:5::3
+os_version: freebsd7.1
+node_id: 52
+team: 1
+#scamper_arguments: -D 8743 -p 100 -M %%MONITOR%% -c "trace -P icmp-paris -q 3 -L 1"
+feature_radclock: true
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Kista, SE
+geographic_longitude: 17.9443237
+geographic_latitude: 59.4024802
+organization_name: Acreo
+organization_url: http://www.acreo.se
+organization_classification: business
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: Jonas Lindqvist <Jonas.Lindqvist@acreo.se>
+contact_admin: Jonas Lindqvist <Jonas.Lindqvist@acreo.se>
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/795326112
+activation_time: 1271100529
+
+---
+.monitor: rno-us
+ip_address: 134.197.113.5
+os_version: freebsd7.1
+node_id: 53
+team: 2
+feature_radclock: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Reno, NV, US
+geographic_longitude: -119.8138027
+geographic_latitude: 39.5296329
+organization_name: University of Nevada at Reno
+organization_url: http://www.unr.edu/
+organization_classification: university
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: Michael Dahl <dahl@unr.edu>
+contact_admin: Mehmet H Gunes <mgunes@unr.edu>
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/1472883730
+activation_time: 1273107555
+
+---
+.monitor: cgk-id
+ip_address: 202.180.0.200
+ip6_address: 2001:d68:2000::200
+os_version: freebsd7.3
+node_id: 54
+team: 2
+feature_radclock: true
+activity_topo_v6: true
+geographic_location: Jakarta, ID
+geographic_longitude: 106.845172
+geographic_latitude: -6.211544
+organization_name: Indonesian IPv6 Task Force
+organization_url: http://www.ipv6tf.or.id
+organization_classification: research network
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: TAP <teddyap@access.net.id>, ipv6@access.net.id
+contact_admin: TAP <teddyap@access.net.id>
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/1453587065
+activation_time: 1277318609
+
+# 2011-09-14: fra-de (node 55) decommissioned; became fmo-de
+
+---
+.monitor: zrh2-ch
+ip_address: 81.94.127.244
+ip6_address: 2001:4b20:ca1d::e4
+os_version: freebsd7.4
+node_id: 56
+team: 3
+feature_radclock: true
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Zug, CH
+geographic_longitude: 8.513854
+geographic_latitude: 47.1745887
+organization_name: Kantonsschule Zug
+organization_url: https://as34288.net/
+organization_classification: educational network
+organization_aup: http://www.caida.org/projects/ark/moc/ark-moc-v1.xml
+contact_tech: Christian 'wiwi' Wittenhorst <wiwi@progon.net>
+contact_admin: Christian 'wiwi' Wittenhorst <wiwi@progon.net>
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/835118621
+activation_time: 1285876463
+
+---
+.monitor: hkg-cn
+ip_address: 213.254.227.26
+ip6_address: 2001:668:0:3::1020:32
+os_version: freebsd7.3
+node_id: 57
+team: 1
+feature_radclock: true
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Hong Kong, CN
+geographic_longitude: 114.2033843
+geographic_latitude: 22.2478599
+organization_name: Tinet
+organization_url: http://www.tinet.net/
+organization_classification: commercial network
+contact_tech: timo.mohre@gtt.net
+contact_admin: timo.mohre@gtt.net
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/524419675
+activation_time: 1287528793
+
+---
+.monitor: osl-no
+ip_address: 128.39.36.95
+os_version: freebsd7.3
+node_id: 58
+team: 2
+feature_radclock: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Lysaker, NO
+geographic_longitude: 10.640499
+geographic_latitude: 59.9131287
+organization_name: Simula Research Laboratory
+organization_url: http://simula.no/
+organization_classification: research
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: amundk@simula.no
+contact_admin: amundk@simula.no
+xively_url: https://xively.com/feeds/1824337790
+activation_time: 1288134952
+
+---
+.monitor: fnl-us
+ip_address: 129.82.138.43
+os_version: freebsd7.3
+node_id: 59
+team: 2
+feature_radclock: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Fort Collins, CO, US
+geographic_longitude: -105.084423
+geographic_latitude: 40.5852602
+organization_name: Colorado State University
+organization_url: http://www.colostate.edu/
+organization_classification: university
+organization_aup: http://www.caida.org/projects/ark/moc/ark-moc-v1.xml
+contact_tech: vamsi@CS.ColoState.EDU
+contact_admin: massey@CS.ColoState.EDU
+xively_url: https://xively.com/feeds/1642592389
+activation_time: 1288822163
+
+---
+.monitor: sao-br
+ip_address: 200.160.7.159
+os_version: freebsd7.3
+node_id: 60
+team: 1
+feature_radclock: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Sao Paulo, BR
+geographic_longitude: -46.6388182
+geographic_latitude: -23.5489433
+organization_name: Registro.br
+organization_url: http://registro.br
+organization_classification: educational network
+organization_aup: http://www.caida.org/projects/ark/moc/ark-moc-v1.xml
+contact_tech: marcelo@registro.br
+contact_admin: marcelo@registro.br
+xively_url: https://xively.com/feeds/1060478309
+activation_time: 1289853410
+
+---
+.monitor: mel-au
+ip_address: 128.250.97.84
+os_version: freebsd7.3
+node_id: 61
+team: 3
+feature_radclock: true
+geographic_location: Melbourne, AU
+geographic_longitude: 144.9629796
+geographic_latitude: -37.8131869
+organization_name: University of Melbourne
+organization_url: http://www.cubinlab.ee.unimelb.edu.au/
+organization_classification: university
+organization_aup: http://www.caida.org/projects/ark/aup/index.xml
+contact_tech: dveitch@unimelb.edu.au
+contact_admin: jridoux@unimelb.edu.au
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/1766698420
+activation_time: 1300919121
+
+---
+.monitor: cdg-fr
+ip_address: 85.31.196.71
+os_version: freebsd7.3
+node_id: 62
+team: 2
+feature_radclock: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Boulogne Billancourt, FR
+geographic_longitude: 2.237803
+geographic_latitude: 48.84325
+organization_name: Jaguar Network
+organization_url: http://www.jaguar-network.com/
+organization_classification: commercial network
+organization_aup: http://www.caida.org/projects/ark/moc/ark-moc-v1.xml
+contact_tech: marijana.novakovic@jaguar-network.com
+contact_admin: marijana.novakovic@jaguar-network.com
+hardware_origin: Contributed
+xively_url: https://xively.com/feeds/1816922809
+activation_time: 1314314009
+
+# 2014-01-23 fmo-de decommissioned; 91.190.147.210, fbsd73, node 63, team 3
+
+---
+.monitor: per-au
+ip_address: 113.197.9.170
+ip6_address: 2001:388:1:180f:20e:cff:fe4b:fb75
+os_version: freebsd7.4
+node_id: 64
+team: 2
+feature_radclock: true
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Perth, AU
+geographic_longitude: 115.8573389
+geographic_latitude: -31.9528536
+organization_name: AARNet
+organization_url: http://www.aarnet.edu.au/
+organization_classification: research network
+organization_aup: http://www.caida.org/projects/ark/moc/ark-moc-v1.xml
+contact_tech: Bruce Morgan <Bruce.Morgan@aarnet.edu.au>, noc@aarnet.edu.au
+contact_admin: Bruce Morgan <Bruce.Morgan@aarnet.edu.au>
+hardware_origin: Contributed
+xively_url: https://xively.com/feeds/970710380
+activation_time: 1317341542
+
+---
+.monitor: pek-cn
+ip_address: 218.241.107.98
+os_version: freebsd7.3
+node_id: 65
+team: 2
+feature_radclock: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Beijing, CN
+geographic_longitude: 116.407413
+geographic_latitude: 39.904214
+organization_name: CNNIC
+organization_url: http://www.cnnic.net.cn/en/index/
+organization_classification: network infrastructure
+organization_aup: http://www.caida.org/projects/ark/moc/ark-moc-v1.xml
+contact_tech: li_qiang@cnnic.cn
+contact_admin: li_qiang@cnnic.cn
+hardware_origin: Contributed
+xively_url: https://xively.com/feeds/366825163
+activation_time: 1320447562
+
+---
+.monitor: sao2-br
+ip_address: 200.136.34.2
+os_version: linux-raspbian
+node_id: 66
+team: 3
+activity_midar: true
+activity_iffinder: true
+geographic_location: Sao Paulo, BR
+geographic_longitude: -46.6388182
+geographic_latitude: -23.5489433
+organization_name: Rede ANSP / Projeto NARA
+organization_url: http://www.ansp.br/en/internet/membros/nara/
+organization_classification: research network
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: Jorge Marcos <noc@ansp.br>
+contact_admin: Luis Fernandez Lopez<lopez@wfpd.com.br>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000f
+xively_url: https://xively.com/feeds/2025457782
+activation_time: 1331245926
+
+---
+.monitor: yyz-ca
+ip_address: 206.108.0.41
+os_version: freebsd7.4
+node_id: 67
+team: 3
+activity_midar: true
+activity_iffinder: true
+geographic_location: Toronto, ON, CA
+geographic_longitude: -79.3
+geographic_latitude: 43.66
+organization_name: TorIX
+organization_url: http://www.torix.net/
+organization_classification: network infrastructure
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: admin@torix.ca
+contact_admin: Jon Nistor <nistor@snickers.org>
+hardware_origin: Contributed
+xively_url: https://xively.com/feeds/2087575209
+activation_time: 1331755694
+
+---
+.monitor: bjl-gm
+ip_address: 196.46.233.22
+os_version: freebsd7.3
+node_id: 68
+team: 3
+feature_radclock: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Serrekunda, GM
+geographic_longitude: -16.6816667
+geographic_latitude: 13.438611
+organization_name: QCell
+organization_url: http://qcell.gm/
+organization_classification: business
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: isatou.jah@qcell.gm
+contact_admin: sghuter@nsrc.org
+hardware_origin: Ashford
+xively_url: https://xively.com/feeds/181473234
+activation_time: 1335471457
+
+---
+.monitor: nrt2-jp
+ip_address: 219.119.53.9
+os_version: linux-raspbian
+node_id: 69
+team: 3
+# no MIDAR due to NAT
+activity_midar: false
+activity_iffinder: true
+geographic_location: Tokyo, JP
+geographic_longitude: 139.6917064
+geographic_latitude: 35.6894875
+organization_name: Residential (Plala NTT broadband)
+organization_url: http://www.plala.or.jp/
+organization_classification: residential
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: Keisuke ISHIBASHI <ishibashi.keisuke@lab.ntt.co.jp>
+contact_admin: Arai MASAYUKI <masayuki.arai@ntt-at.co.jp>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+behind_nat: true
+dynamic_dhcp: true
+xively_url: https://xively.com/feeds/1798904741
+activation_time: 1348099200
+
+---
+.monitor: pry-za
+ip_address: 196.216.3.6
+os_version: freebsd7.4
+node_id: 70
+team: 1
+ntp_server: 196.4.160.4
+feature_radclock: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Pretoria, ZA
+geographic_longitude: 28.21837
+geographic_latitude: -25.73134
+organization_name: AFRINIC
+organization_url: http://www.afrinic.net/
+organization_classification: network infrastructure
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: Daniel Shaw <daniel@afrinic.net>, AFAHOUNKO Danny <danny@afrinic.net>
+contact_admin: Neriah Sossou <neriah@afrinic.net>
+hardware_origin: Contributed
+xively_url: https://xively.com/feeds/269420015
+activation_time: 1345238885
+
+---
+.monitor: snn-ie
+ip_address: 193.1.101.205
+os_version: linux-raspbian
+node_id: 71
+team: 2
+# 2013-04-22: TCP ACK probes appear to be blocked??
+activity_midar: false
+activity_iffinder: true
+geographic_location: Limerick, IE
+geographic_longitude: -8.6304975
+geographic_latitude: 52.6680204
+organization_name: University of Limerick
+organization_url: http://www.ul.ie
+organization_classification: university
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: Nikolay.Todorov <Nikolay.Todorov@ul.ie>
+contact_admin: Ivan.Ganchev <Ivan.Ganchev@ul.ie>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 256MB Model B Revision 0003
+xively_url: https://xively.com/feeds/1822525525
+activation_time: 1356137153
+
+---
+.monitor: sin-sg
+ip_address: 203.123.48.15
+ip6_address: 2405:FC00::a002
+os_version: linux-raspbian
+node_id: 72
+team: 1
+#ntp_server: 203.123.48.1
+ntp_server: 203.123.48.6
+#dns_server: 203.123.48.1
+dns_server: 203.123.48.6
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Singapore, SG
+geographic_longitude: 103.819836
+geographic_latitude: 1.352083
+organization_name: DCS1 Pte Ltd
+organization_url: http://www.linkedin.com/company/dcs1-pte-ltd
+organization_classification: business
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: Sanjeev Gupta <sanjeev@dcs1.biz>
+contact_admin: Sanjeev Gupta <sanjeev@dcs1.biz>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000f
+xively_url: https://xively.com/feeds/840106975
+activation_time: 1358210617
+
+# NOTE: Hosted by k at her house, which has Cox broadband.
+#       IP address is dynamically assigned with DHCP and may change.
+#       External SSH port 1022 is forwarded to port 22 of Pi.
+#       Internal address is statically assigned with DHCP to 192.168.1.118.
+---
+.monitor: san2-us
+ip_address: 174.65.126.44
+os_version: linux-raspbian
+ssh_port: 1022
+node_id: 73
+team: 3
+#activity_spoofer: true
+activity_iffinder: true
+# XXX 2013-07-24 TCP probes work, but MIDAR can't handle hosts behind NATs
+activity_midar: false
+geographic_location: San Diego, CA, US
+geographic_longitude: -117.1572551
+geographic_latitude: 32.7153292
+organization_name: Residential (Cox Broadband)
+organization_url: http://www.caida.org/
+organization_classification: residential
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: Sysadmins <trouble@caida.org>
+contact_admin: Sysadmins <trouble@caida.org>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 256MB Model B Revision 0003
+behind_nat: true
+dynamic_dhcp: true
+xively_url: https://xively.com/feeds/1146977694
+activation_time: 1359421263
+
+# NOTE: Hosted by Rob Beverly at his house, which has Comcast Business
+#       broadband.   IP address is dynamically assigned with DHCP and
+#       may change.
+#       External SSH port 90 is forwarded to port 22 of Pi.
+#       Internal address is 192.168.1.75
+---
+.monitor: mry-us
+ip_address: 70.90.166.170
+os_version: linux-raspbian
+ssh_port: 90
+node_id: 74
+team: 1
+#activity_spoofer: true
+activity_iffinder: true
+# 2013-04-22: TCP ACK probes appear to be blocked (no established flow?).
+activity_midar: false
+geographic_location: Carmel, CA, US
+geographic_longitude: -121.9232879
+geographic_latitude: 36.5552386
+organization_name: Residential (Comcast Business Broadband)
+organization_url: http://www.caida.org/
+organization_classification: residential
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: Robert Beverly <rbeverly@nps.edu>
+contact_admin: Robert Beverly <rbeverly@nps.edu>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000f
+behind_nat: true
+dynamic_dhcp: true
+xively_url: https://xively.com/feeds/57640717
+activation_time: 1360631619
+
+---
+.monitor: oak-us
+ip_address: 192.150.187.132
+ip6_address: 2607:f140:2000:4001:ba27:ebff:feca:866d
+os_version: linux-raspbian
+node_id: 75
+team: 1
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Berkeley, CA, US
+geographic_longitude: -122.272747
+geographic_latitude: 37.8715926
+organization_name: International Computer Science Institute (ICSI)
+organization_url: http://www.icir.org
+organization_classification: research
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: Nicholas Weaver <nweaver@ICSI.Berkeley.EDU>
+contact_admin: Nicholas Weaver <nweaver@ICSI.Berkeley.EDU>
+hardware_origin: Contributed
+hardware_type: Raspberry Pi 512MB Model B Revision 000f
+xively_url: https://xively.com/feeds/357607218
+activation_time: 1361320502
+
+---
+.monitor: ams3-nl
+ip_address: 193.0.0.168
+#ip6_address: 2001:67c:2e8:3::193.0.0.168
+ip6_address: 2001:67c:2e8:3::c100:a8
+os_version: linux-raspbian
+node_id: 76
+team: 1
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Amsterdam, NL
+geographic_longitude: 4.8951679
+geographic_latitude: 52.3702157
+organization_name: RIPE NCC
+organization_url: http://www.ripe.net/
+organization_classification: network infrastructure
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: Menno Schepers <mschepers@ripe.net>
+contact_admin: Robert Kisteleki <robert@ripe.net>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000f
+xively_url: https://xively.com/feeds/1918244505
+activation_time: 1361388274
+
+---
+.monitor: bud2-hu
+ip_address: 157.181.172.123
+os_version: linux-raspbian
+ssh_port: 11111
+node_id: 77
+team: 2
+activity_iffinder: true
+# XXX 2013-07-24 TCP probes work, but MIDAR can't handle hosts behind NATs
+activity_midar: false
+geographic_location: Budapest, HU
+geographic_longitude: 19.040235
+geographic_latitude: 47.497912
+#organization_name: Eötvös Loránd University (ELTE)
+organization_name: E&#246;tv&#246;s Lor&#225;nd University (ELTE)
+organization_url: http://www.elte.hu
+organization_classification: university
+organization_aup: http://www.caida.org/projects/ark/moc/
+# also laki@etomic.org
+contact_tech: Sandor Laki <lakis@elte.hu>
+contact_admin: Sandor Laki <lakis@elte.hu>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000f
+behind_nat: true
+dynamic_dhcp: false
+xively_url: https://xively.com/feeds/872236015
+activation_time: 1362429097
+
+---
+.monitor: bed-us
+ip_address: 50.138.170.121
+os_version: linux-raspbian
+#ssh_port: 897
+node_id: 78
+team: 1
+activity_iffinder: true
+# 2013-04-22: TCP ACK probes appear to be blocked (no established flow?).
+activity_midar: false
+geographic_location: Concord, MA, US
+geographic_longitude: -71.3494444
+geographic_latitude: 42.4602778
+organization_name: Residential (Comcast Cable)
+organization_url: http://www.caida.org/
+organization_classification: residential
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: David Clark <ddc@csail.mit.edu>
+contact_admin: David Clark <ddc@csail.mit.edu>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000f
+behind_nat: true
+dynamic_dhcp: true
+xively_url: https://xively.com/feeds/638558459
+activation_time: 1362689927
+
+---
+.monitor: gva-ch
+ip_address: 46.20.241.26
+os_version: linux-raspbian
+node_id: 79
+team: 1
+activity_midar: true
+activity_iffinder: true
+geographic_location: Geneva, CH
+geographic_longitude: 6.1422961
+geographic_latitude: 46.1983922
+organization_name: IP-Max SA
+organization_url: http://www.ip-max.net/
+organization_classification: commercial network
+organization_aup: http://www.caida.org/projects/ark/moc/ark-moc-v1.xml
+contact_tech: noc@ip-max.net
+contact_admin: Will van Gulik <will.van.gulik@ip-max.net>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000f
+xively_url: https://xively.com/feeds/1573328651
+activation_time: 1369437672
+
+---
+.monitor: cph-dk
+ip_address: 94.126.177.65
+ip6_address: 2a03:a480:200:3706::2
+os_version: linux-raspbian
+node_id: 80
+team: 2
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Ballerup, DK
+geographic_longitude: 12.354765
+geographic_latitude: 55.724508
+organization_name: Solido Networks ApS
+organization_url: http://solidonetworks.com
+organization_classification: commercial network
+organization_aup: http://www.caida.org/projects/ark/moc/ark-moc-v1.xml
+contact_tech: noc@solido.net
+contact_admin: Henrik Lund Kramshøj <hlk@solido.net>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000f
+xively_url: https://xively.com/feeds/1127411273
+activation_time: 1371137296
+
+---
+.monitor: san3-us
+ip_address: 184.179.109.190
+os_version: linux-raspbian
+node_id: 81
+team: 2
+# 2013-07-23: TCP ACK probes appear to be blocked (no established flow?).
+activity_midar: false
+#activity_spoofer: true
+activity_iffinder: true
+geographic_location: San Diego, CA, US
+geographic_longitude: -117.1572551
+geographic_latitude: 32.7153292
+organization_name: HB Networks
+organization_url: http://www.hbnetworks.net/
+organization_classification: business
+organization_aup: http://www.caida.org/projects/ark/moc/ark-moc-v1.xml
+contact_tech: James Sink <js@hb-networks.com>
+contact_admin: James Sink <js@hb-networks.com>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+behind_nat: true
+dynamic_dhcp: false
+xively_url: https://xively.com/feeds/604637243
+activation_time: 1371742898
+
+---
+.monitor: sin2-sg
+ip_address: 202.6.102.35
+ip6_address: 2001:dd8:25:7::35
+os_version: linux-raspbian
+node_id: 82
+team: 3
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Singapore, SG
+geographic_longitude: 103.819836
+geographic_latitude: 1.352083
+organization_name: Openmirrors.asia - at Equinix SG1
+organization_url: http://openmirrors.asia
+organization_classification: commercial network
+organization_aup: http://www.caida.org/projects/ark/moc/ark-moc-v1.xml
+contact_tech: Gaurab Raj Upadhaya <gaurab@lahai.com>
+contact_admin: Gaurab Raj Upadhaya <gaurab@lahai.com>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+xively_url: https://xively.com/feeds/1549940817
+activation_time: 1372262007
+
+---
+.monitor: dac-bd
+ip_address: 119.40.82.245
+ip6_address: 2403:4000:21:3::11
+os_version: linux-raspbian
+node_id: 83
+team: 3
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Dhaka, BD
+geographic_longitude: 90.407143
+geographic_latitude: 23.709921
+organization_name: BDCOM Online Limited at BD-IX
+organization_url: http://www.bdcom.com
+organization_classification: commercial network
+organization_aup: http://www.caida.org/projects/ark/moc/ark-moc-v1.xml
+contact_tech: GZ Kabir <gzkabir@bdcom.com>
+contact_admin: GZ Kabir <gzkabir@bdcom.com>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000f
+xively_url: https://xively.com/feeds/736301329
+activation_time: 1372439123
+
+---
+.monitor: ktm-np
+ip_address: 202.52.0.24
+ip6_address: 2404:2C00:1::24
+os_version: linux-raspbian
+node_id: 84
+team: 2
+ntp_server: 202.52.0.15
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Kathmandu, NP
+geographic_longitude: 85.3333333
+geographic_latitude: 27.7
+organization_name: Nepal Research And Education Network
+organization_url: http://www.nren.net.np
+organization_classification: research network
+organization_aup: http://www.caida.org/projects/ark/moc/ark-moc-v1.xml
+contact_tech: noc@nren.net.np
+contact_admin: Gaurab Raj Upadhaya <gaurab@lahai.com>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+xively_url: https://xively.com/feeds/451090594
+activation_time: 1373572054
+
+# NOTE: Hosted by Mark Anderson at his house, which has Cox residential
+#       broadband.
+#          Internal address is 192.168.1.216
+---
+.monitor: msy-us
+ip_address: 174.69.112.148
+dynamic_dns: mranderso.dlinkddns.com
+os_version: linux-raspbian
+ssh_port: 4422
+node_id: 85
+team: 1
+activity_midar: true
+activity_iffinder: true
+geographic_location: New Orleans, LA, US
+geographic_longitude: -90.0500
+geographic_latitude: 29.9667
+organization_name: Residential (Cox Broadband)
+organization_url: http://www.caida.org/
+organization_classification: residential
+organization_aup: http://www.caida.org/projects/ark/moc/ark-moc-v1.xml
+contact_tech: Mark Anderson <Mark.Anderson@ma7.org>
+contact_admin: Mark Anderson <Mark.Anderson@ma7.org>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+behind_nat: true
+dynamic_dhcp: true
+xively_url: https://xively.com/feeds/1604402209
+activation_time: 1382044615
+
+
+# NOTE: Hosted by Alan Smith (BT) at his house (BT residential broadband).
+#       Internal address is 192.168.1.70
+---
+.monitor: stn-uk
+ip_address: 81.156.240.1
+os_version: linux-raspbian
+node_id: 86
+team: 3
+activity_midar: true
+activity_iffinder: true
+geographic_location: Ipswich, UK
+geographic_longitude: 1.14822
+geographic_latitude: 52.056736
+organization_name: Residential (British Telecom)
+organization_url: http://www.caida.org/
+organization_classification: residential
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: alan.p.smith@bt.com
+contact_admin: alan.p.smith@bt.com
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+behind_nat: true
+dynamic_dhcp: true
+xively_url: https://xively.com/feeds/956986821
+activation_time: 1386704395
+
+
+# NOTE: Hosted by Ken Calvert at his house (Time Warner).
+#       Internal address is 192.168.73.101.
+---
+.monitor: lex-us
+ip_address: 96.29.253.62
+os_version: linux-raspbian
+ssh_port: 4241
+node_id: 87
+team: 2
+activity_midar: true
+activity_iffinder: true
+geographic_location: Lexington, KY, US
+geographic_longitude: -84.5037164
+geographic_latitude: 38.0405837
+organization_name: Residential (Time Warner Cable)
+organization_url: http://www.caida.org/
+organization_classification: residential
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: Ken Calvert <calvert@netlab.uky.edu>
+contact_admin: Ken Calvert <calvert@netlab.uky.edu>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+behind_nat: true
+dynamic_dhcp: true
+xively_url: https://xively.com/feeds/1100055189
+activation_time: 1386726825
+
+
+# NOTE: Hosted by Kevin McElearney (Comcast) at his home (Verizon FiOS).
+#       Internal address is 192.168.1.98 (via DHCP).
+---
+.monitor: bed2-us
+ip_address: 173.76.237.173
+os_version: linux-raspbian
+node_id: 88
+team: 2
+activity_midar: true
+activity_iffinder: true
+geographic_location: Groton, MA, US
+geographic_longitude: -71.5745152
+geographic_latitude: 42.6112018
+organization_name: Residential (Verizon FiOS)
+organization_url: http://www.caida.org/
+organization_classification: residential
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: kevin_mcelearney@cable.comcast.com
+contact_admin: kevin_mcelearney@cable.comcast.com
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+behind_nat: true
+dynamic_dhcp: true
+xively_url: https://xively.com/feeds/1835233578
+activation_time: 1387314536
+
+
+# NOTE: Hosted by Sharon Gillett (Microsoft) at her home (RCN).
+#       Internal address is 192.168.1.3 (static).
+---
+.monitor: bed3-us
+ip_address: 146.115.69.170
+os_version: linux-raspbian
+ssh_port: 60957
+node_id: 89
+team: 3
+activity_midar: true
+activity_iffinder: true
+geographic_location: Lexington, MA, US
+geographic_longitude: -71.2289641
+geographic_latitude: 42.4430372
+organization_name: Residential (RCN)
+organization_url: http://www.caida.org/
+organization_classification: residential
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: walter_gillett@hotmail.com
+contact_admin: sharon.gillett@microsoft.com 
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+behind_nat: true
+dynamic_dhcp: true
+xively_url: https://xively.com/feeds/343136415
+activation_time: 1387316242
+
+
+# NOTE: Hosted by Jakob Fritz at his home (Free.fr).
+#       Internal address is 192.168.1.10 (static).
+---
+.monitor: nce-fr
+ip_address: 88.183.56.195
+ip6_address: 2a01:e35:8b73:8c30:ba27:ebff:fe79:a8e8
+os_version: linux-raspbian
+node_id: 90
+team: 1
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Biot, FR
+geographic_longitude: 7.09808
+geographic_latitude: 43.626851
+organization_name: Residential (Free.fr)
+organization_url: http://www.caida.org/
+organization_classification: residential
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: Jakob_Fritz@symantec.com
+contact_admin: Jakob_Fritz@symantec.com
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+behind_nat: true
+dynamic_dhcp: true
+xively_url: https://xively.com/feeds/2022591610
+activation_time: 1387324498
+
+
+# NOTE: Hosted by Josef Gustafasson in his home.
+#       Residential but NOT behind NAT.
+#       Pi is configured with DHCP but not sure whether the address is dynamic.
+---
+.monitor: lpi-se
+ip_address: 46.59.39.33
+os_version: linux-raspbian
+node_id: 91
+team: 3
+activity_midar: true
+activity_iffinder: true
+# Linköping
+geographic_location: Linkoping, SE
+geographic_longitude: 15.6213727
+geographic_latitude: 58.410807
+organization_name: Residential (Bahnhof)
+organization_url: http://www.caida.org/
+organization_classification: residential
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: Josef Gustafsson <josef.gson@gmail.com>
+contact_admin: Josef Gustafsson <josef.gson@gmail.com>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+dynamic_dhcp: true
+xively_url: https://xively.com/feeds/529626283
+activation_time: 1388791425
+
+
+---
+.monitor: osl2-no
+ip_address: 84.202.70.34
+os_version: linux-raspbian
+node_id: 92
+team: 1
+activity_midar: true
+activity_iffinder: true
+geographic_location: Oslo, NO
+geographic_longitude: 10.7522454
+geographic_latitude: 59.9138688
+organization_name: Residential (Canal Digital)
+organization_url: http://www.caida.org/
+organization_classification: residential
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: Ahmed Elmokashfi <ahmed@simula.no>
+contact_admin: Ahmed Elmokashfi <ahmed@simula.no>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+behind_nat: true
+dynamic_dhcp: true
+xively_url: https://xively.com/feeds/237925418
+activation_time: 1392248934
+
+
+---
+.monitor: muc-de
+ip_address: 131.159.14.83
+ip6_address: 2001:4ca0:2001:10:ba27:ebff:fe43:c805
+os_version: linux-raspbian
+node_id: 93
+team: 3
+activity_topo_v6: true
+activity_midar: true
+activity_iffinder: true
+geographic_location: Munich, DE
+geographic_longitude: 11.5819806
+geographic_latitude: 48.1351253
+organization_name: Technical University of Munich
+organization_url: http://www.tum.de/
+organization_classification: university
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: Georg Carle <carle@in.tum.de>
+contact_admin: Georg Carle <carle@in.tum.de>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+xively_url: https://xively.com/feeds/1259266870
+activation_time: 1393025279
+
+
+---
+.monitor: ith-us
+ip_address: 67.249.194.56
+os_version: linux-raspbian
+node_id: 94
+team: 1
+activity_midar: true
+activity_iffinder: true
+geographic_location: Ithaca, NY, US
+geographic_longitude: -76.5018807
+geographic_latitude: 42.4439614
+organization_name: Residential (Time Warner Cable)
+organization_url: http://www.caida.org/
+organization_classification: residential
+organization_aup: http://www.caida.org/projects/ark/moc/
+contact_tech: Hakim Weatherspoon <hweather@cs.cornell.edu>
+contact_admin: Hakim Weatherspoon <hweather@cs.cornell.edu>
+hardware_origin: CAIDA
+hardware_type: Raspberry Pi 512MB Model B Revision 000e
+behind_nat: true
+dynamic_dhcp: true
+xively_url: https://xively.com/feeds/1898547626
+activation_time: 1393027762
